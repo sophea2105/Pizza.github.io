@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    ul{
+        padding: 0 20px;
+        height: 50px;
+        background:linear-gradient(to right,orange,red,yellow);
+        width: 50%;
+        display: flex;
+        line-height: 50px;
+        justify-content: space-between;
+        
+    }
+    ul li{
+        list-style: none;
+        text-decoration: none;
+    }
+    ul li a{
+        font-size: 20px;
+        color: white;
+    }
+    ul li:hover a{
+        border-bottom: 3px solid white;
+        animation: hv 1s infinite;
+    }
+    @keyframes hv{
+        0%{
+           margin-left: 0;
+        }
+        100%{
+           margin-left: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contect</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+</body>
+</html>
